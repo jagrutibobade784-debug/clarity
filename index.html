@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Website</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Simple Website</h1>
+</header>
+
+<div class="container">
+    <h2>Welcome!</h2>
+    <p>Click the button to see magic 👇</p>
+
+    <button onclick="showMessage()">Click Me</button>
+
+    <p id="message"></p>
+</div>
+
+<script>
+    function showMessage() {
+        document.getElementById("message").innerText = "Hello! You clicked the button 🎉";
+    }
+</script>
+
+</body>
+</html>
